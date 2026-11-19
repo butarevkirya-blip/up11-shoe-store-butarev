@@ -1,0 +1,23 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="erd" name="ERD">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1000">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="roles" value="roles&#10;─────&#10;PK role_id&#10;role_name" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="40" y="40" width="200" height="100" as="geometry"/></mxCell>
+        <mxCell id="users" value="users&#10;─────&#10;PK user_id&#10;last_name&#10;first_name&#10;middle_name&#10;login (UNIQUE)&#10;FK role_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="320" y="40" width="220" height="160" as="geometry"/></mxCell>
+        <mxCell id="orders" value="orders&#10;─────&#10;PK order_id&#10;order_date&#10;FK user_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="620" y="40" width="200" height="110" as="geometry"/></mxCell>
+        <mxCell id="order_items" value="order_items&#10;─────&#10;PK order_item_id&#10;FK order_id&#10;FK stock_item_id&#10;quantity&#10;price_at_order" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="920" y="40" width="230" height="150" as="geometry"/></mxCell>
+        <mxCell id="products" value="products&#10;─────&#10;PK product_id&#10;category&#10;subcategory&#10;manufacturer&#10;product_name&#10;image_path&#10;composition&#10;description&#10;price" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1"><mxGeometry x="40" y="360" width="230" height="240" as="geometry"/></mxCell>
+        <mxCell id="stock_items" value="stock_items&#10;─────&#10;PK stock_item_id&#10;FK product_id&#10;FK size_id&#10;quantity" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1"><mxGeometry x="500" y="460" width="220" height="130" as="geometry"/></mxCell>
+        <mxCell id="sizes" value="sizes&#10;─────&#10;PK size_id&#10;size_value" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=8;spacingTop=8;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="900" y="520" width="180" height="100" as="geometry"/></mxCell>
+        <mxCell id="e1" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1" source="roles" target="users"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1" source="users" target="orders"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1" source="orders" target="order_items"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1" source="products" target="stock_items"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1" source="sizes" target="stock_items"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="endArrow=classic;html=1;strokeWidth=2;" edge="1" parent="1" source="stock_items" target="order_items"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

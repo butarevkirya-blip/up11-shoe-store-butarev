@@ -1,0 +1,175 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1190 842] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 5676 >>
+stream
+1 1 1 rg
+0 0 1190 842 re f
+BT /F2 20 Tf 0.15 0.15 0.15 rg 40 800 Td (ERD diagram - Chudo Obuv database) Tj ET
+BT /F1 11 Tf 0.40 0.40 0.40 rg 40 782 Td (7 tables, 1:N relations. PK - primary key, FK - foreign key) Tj ET
+1.000 0.950 0.800 rg
+0.840 0.710 0.340 RG 2 w
+40 686 200 54 re B
+0.840 0.710 0.340 rg
+40 718 200 22 re f
+BT /F2 12 Tf 1 1 1 rg 48 725 Td (roles) Tj ET
+BT /F1 9 Tf 0 0 0 rg 48 707 Td (PK  role_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 40 702 m 240 702 l S
+BT /F1 9 Tf 0 0 0 rg 48 691 Td (    role_name) Tj ET
+0.855 0.910 0.988 rg
+0.424 0.557 0.749 RG 2 w
+320 622 220 118 re B
+0.424 0.557 0.749 rg
+320 718 220 22 re f
+BT /F2 12 Tf 1 1 1 rg 328 725 Td (users) Tj ET
+BT /F1 9 Tf 0 0 0 rg 328 707 Td (PK  user_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 320 702 m 540 702 l S
+BT /F1 9 Tf 0 0 0 rg 328 691 Td (    last_name) Tj ET
+0.85 0.85 0.85 RG 0.5 w 320 686 m 540 686 l S
+BT /F1 9 Tf 0 0 0 rg 328 675 Td (    first_name) Tj ET
+0.85 0.85 0.85 RG 0.5 w 320 670 m 540 670 l S
+BT /F1 9 Tf 0 0 0 rg 328 659 Td (    middle_name) Tj ET
+0.85 0.85 0.85 RG 0.5 w 320 654 m 540 654 l S
+BT /F1 9 Tf 0 0 0 rg 328 643 Td (    login \(UNIQUE\)) Tj ET
+0.85 0.85 0.85 RG 0.5 w 320 638 m 540 638 l S
+BT /F1 9 Tf 0 0 0 rg 328 627 Td (FK  role_id) Tj ET
+0.835 0.910 0.830 rg
+0.510 0.700 0.400 RG 2 w
+620 670 200 70 re B
+0.510 0.700 0.400 rg
+620 718 200 22 re f
+BT /F2 12 Tf 1 1 1 rg 628 725 Td (orders) Tj ET
+BT /F1 9 Tf 0 0 0 rg 628 707 Td (PK  order_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 620 702 m 820 702 l S
+BT /F1 9 Tf 0 0 0 rg 628 691 Td (    order_date) Tj ET
+0.85 0.85 0.85 RG 0.5 w 620 686 m 820 686 l S
+BT /F1 9 Tf 0 0 0 rg 628 675 Td (FK  user_id) Tj ET
+0.973 0.808 0.800 rg
+0.722 0.330 0.314 RG 2 w
+920 638 230 102 re B
+0.722 0.330 0.314 rg
+920 718 230 22 re f
+BT /F2 12 Tf 1 1 1 rg 928 725 Td (order_items) Tj ET
+BT /F1 9 Tf 0 0 0 rg 928 707 Td (PK  order_item_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 920 702 m 1150 702 l S
+BT /F1 9 Tf 0 0 0 rg 928 691 Td (FK  order_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 920 686 m 1150 686 l S
+BT /F1 9 Tf 0 0 0 rg 928 675 Td (FK  stock_item_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 920 670 m 1150 670 l S
+BT /F1 9 Tf 0 0 0 rg 928 659 Td (    quantity) Tj ET
+0.85 0.85 0.85 RG 0.5 w 920 654 m 1150 654 l S
+BT /F1 9 Tf 0 0 0 rg 928 643 Td (    price_at_order) Tj ET
+0.882 0.835 0.906 rg
+0.588 0.451 0.651 RG 2 w
+40 294 230 166 re B
+0.588 0.451 0.651 rg
+40 438 230 22 re f
+BT /F2 12 Tf 1 1 1 rg 48 445 Td (products) Tj ET
+BT /F1 9 Tf 0 0 0 rg 48 427 Td (PK  product_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 40 422 m 270 422 l S
+BT /F1 9 Tf 0 0 0 rg 48 411 Td (    category) Tj ET
+0.85 0.85 0.85 RG 0.5 w 40 406 m 270 406 l S
+BT /F1 9 Tf 0 0 0 rg 48 395 Td (    subcategory) Tj ET
+0.85 0.85 0.85 RG 0.5 w 40 390 m 270 390 l S
+BT /F1 9 Tf 0 0 0 rg 48 379 Td (    manufacturer) Tj ET
+0.85 0.85 0.85 RG 0.5 w 40 374 m 270 374 l S
+BT /F1 9 Tf 0 0 0 rg 48 363 Td (    product_name) Tj ET
+0.85 0.85 0.85 RG 0.5 w 40 358 m 270 358 l S
+BT /F1 9 Tf 0 0 0 rg 48 347 Td (    image_path) Tj ET
+0.85 0.85 0.85 RG 0.5 w 40 342 m 270 342 l S
+BT /F1 9 Tf 0 0 0 rg 48 331 Td (    composition) Tj ET
+0.85 0.85 0.85 RG 0.5 w 40 326 m 270 326 l S
+BT /F1 9 Tf 0 0 0 rg 48 315 Td (    description) Tj ET
+0.85 0.85 0.85 RG 0.5 w 40 310 m 270 310 l S
+BT /F1 9 Tf 0 0 0 rg 48 299 Td (    price) Tj ET
+1.000 0.902 0.800 rg
+0.843 0.608 0.000 RG 2 w
+500 294 220 86 re B
+0.843 0.608 0.000 rg
+500 358 220 22 re f
+BT /F2 12 Tf 1 1 1 rg 508 365 Td (stock_items) Tj ET
+BT /F1 9 Tf 0 0 0 rg 508 347 Td (PK  stock_item_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 500 342 m 720 342 l S
+BT /F1 9 Tf 0 0 0 rg 508 331 Td (FK  product_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 500 326 m 720 326 l S
+BT /F1 9 Tf 0 0 0 rg 508 315 Td (FK  size_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 500 310 m 720 310 l S
+BT /F1 9 Tf 0 0 0 rg 508 299 Td (    quantity) Tj ET
+1.000 0.950 0.800 rg
+0.840 0.710 0.340 RG 2 w
+900 326 180 54 re B
+0.840 0.710 0.340 rg
+900 358 180 22 re f
+BT /F2 12 Tf 1 1 1 rg 908 365 Td (sizes) Tj ET
+BT /F1 9 Tf 0 0 0 rg 908 347 Td (PK  size_id) Tj ET
+0.85 0.85 0.85 RG 0.5 w 900 342 m 1080 342 l S
+BT /F1 9 Tf 0 0 0 rg 908 331 Td (    size_value) Tj ET
+0.30 0.30 0.30 RG 1.5 w
+240 726 m 320 654 l S
+0.30 0.30 0.30 rg 237 723 6 6 re f
+0.30 0.30 0.30 rg 317 651 6 6 re f
+BT /F2 11 Tf 0.80 0.00 0.00 rg 256.0 716.6 Td (1) Tj ET
+BT /F2 11 Tf 0.80 0.00 0.00 rg 304.0 673.4 Td (N) Tj ET
+0.30 0.30 0.30 RG 1.5 w
+540 726 m 620 710 l S
+0.30 0.30 0.30 rg 537 723 6 6 re f
+0.30 0.30 0.30 rg 617 707 6 6 re f
+BT /F2 11 Tf 0.80 0.00 0.00 rg 556.0 727.8 Td (1) Tj ET
+BT /F2 11 Tf 0.80 0.00 0.00 rg 604.0 718.2 Td (N) Tj ET
+0.30 0.30 0.30 RG 1.5 w
+820 726 m 920 710 l S
+0.30 0.30 0.30 rg 817 723 6 6 re f
+0.30 0.30 0.30 rg 917 707 6 6 re f
+BT /F2 11 Tf 0.80 0.00 0.00 rg 840.0 727.8 Td (1) Tj ET
+BT /F2 11 Tf 0.80 0.00 0.00 rg 900.0 718.2 Td (N) Tj ET
+0.30 0.30 0.30 RG 1.5 w
+270 446 m 500 366 l S
+0.30 0.30 0.30 rg 267 443 6 6 re f
+0.30 0.30 0.30 rg 497 363 6 6 re f
+BT /F2 11 Tf 0.80 0.00 0.00 rg 316.0 435.0 Td (1) Tj ET
+BT /F2 11 Tf 0.80 0.00 0.00 rg 454.0 387.0 Td (N) Tj ET
+0.30 0.30 0.30 RG 1.5 w
+720 362 m 900 366 l S
+0.30 0.30 0.30 rg 717 359 6 6 re f
+0.30 0.30 0.30 rg 897 363 6 6 re f
+BT /F2 11 Tf 0.80 0.00 0.00 rg 756.0 367.8 Td (1) Tj ET
+BT /F2 11 Tf 0.80 0.00 0.00 rg 864.0 370.2 Td (N) Tj ET
+0.30 0.30 0.30 RG 1.5 w
+720 334 m 920 674 l S
+0.30 0.30 0.30 rg 717 331 6 6 re f
+0.30 0.30 0.30 rg 917 671 6 6 re f
+BT /F2 11 Tf 0.80 0.00 0.00 rg 760.0 407.0 Td (1) Tj ET
+BT /F2 11 Tf 0.80 0.00 0.00 rg 880.0 611.0 Td (N) Tj ET
+BT /F1 10 Tf 0.40 0.40 0.40 rg 40 60 Td (PK - primary key, FK - foreign key. Relations 1:N - one to many.) Tj ET
+BT /F1 9 Tf 0.60 0.60 0.60 rg 40 42 Td (Generated by src/make_pdf.py - no external libraries) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000258 00000 n 
+0000000328 00000 n 
+0000000403 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+6131
+%%EOF
