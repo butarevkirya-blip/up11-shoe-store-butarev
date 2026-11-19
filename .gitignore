@@ -1,0 +1,12 @@
+db/shoe_store.sqlite
+db/backups/*
+!db/backups/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
+data/*.xlsx
+.DS_Store
+Thumbs.db
+*.log
